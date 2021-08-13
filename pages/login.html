@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ESPACE ADHÉRENTS.</title>
+		<!-- META -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/responsive.css">
+		<link rel="stylesheet" type="text/css" href="../css/darktheme.css">
+		<!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	</head>
+	<body>
+        <nav id="pagesNavbar" class="navbar navbar-expand-xl navbar-light bg-white fixed-top">
+            <a class="navbar-brand" href="../index.html">ÉTOILE DU CARMEL.</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">ACCUEIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articles.html">ARTICLES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="joinus.html">ADHÉRER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">À PROPOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li id="nav-login">
+                        <a href="#"><i class="far fa-user-circle"></i></a>
+                    </li>
+                    <li id="theme">
+                        <input id="theme-checkbox" type="checkbox" class="theme-checkbox">
+                        <label for="theme-checkbox" class="label">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </li> 
+                </ul>
+            </div>
+        </nav>
+
+        <main id="main" class="connect-core">
+            <h1>Espace adhérents</h1>
+			<div class="logform-container">
+                <form>
+					<div class="identifiant">
+						<label for="username">Identifiant</label>
+						<input id="username" type="text" name="username" placeholder="Identifiant">
+					</div>
+					<div class="password">
+						<label for="password">Mot de passe</label>
+						<input id="password" type="password" name="password" placeholder="Mot de passe">
+					</div>
+					<div id="error"></div>
+					<div class="buttons">
+						<button id="forgot">Mot de passe oublié</button>						
+						<button id="connexion" type="submit" name="connexion" class="btn btn-success">Connexion</button>
+					</div>
+				</form>
+
+                <form class="hidden" id="hidden">
+					<div class="reset">
+						<h2>Réinitialisation du mot de passe</h2>
+						<div class="resetInfo">
+							<label for="email">Entrez votre email</label>
+							<input id="email" type="email" name="email" placeholder="Votre email" required>
+						</div>
+						<div class="resetBtn buttons">
+							<button id="resetPassword" type="submit" name="resetPassword" class="btn btn-primary">Réinitialiser</button>
+						</div>						
+					</div>					
+				</form>
+            </div>
+
+            <div class="paratext">
+				<p><strong>NB: Cet espace est réservé aux adhérents de l'association.</strong></p>
+				<p>Si vous n'avez pas reçu vos identifiants pour accéder à votre espace, n'hésitez pas à nous <a href="contact.html">contacter</a> !</p>
+			</div>
+        </main>
+        <footer>
+			<div class="footer-bottom">
+				<p>ÉTOILE DU CARMEL.&copy; 2021, tous droits réservés.</p>
+			</div>
+			<div class="footer-legal">
+				<a href="" target="_blank">Mentions légales</a><span>|</span><a href="" target="_blank">CGV</a><span>|</span><a href="" target="_blank">Politique de Confidentialité</a>
+			</div>			
+		</footer>        
+    </body>
+    <!-- Font Awesome ICON -->
+	<script src="https://kit.fontawesome.com/9e45d32bdd.js" crossorigin="anonymous"></script>
+	<!-- JavaScript -->
+	<script type="text/javascript" src="../js/app.js"></script>
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>

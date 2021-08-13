@@ -1,0 +1,28 @@
+/*<!-- ########################################################################## -->*/
+/*<!-- ###                             DARK THEME                             ### -->*/
+/*<!-- ########################################################################## -->*/
+
+body.dark{background: #1F1B24;color: #FFF;}
+body.dark .intro-text button{
+	background: #1F1B24;
+	border: 1px solid #FFF;
+	color: #FFF;
+}
+body.dark .intro-text button:hover{
+	background: #FFF;
+	color: #111;
+	cursor: pointer;
+}
+
+/*<!-- ########################################################################## -->*/
+/*<!-- ###                                FORM                                ### -->*/
+/*<!-- ########################################################################## -->*/
+
+body.dark #submitContact{background: #FFF;}
+body.dark #submitContact:hover{font-weight: bold;color: #111;}
+body.dark .formInput input,body.dark .formTextarea textarea,body.dark .formInput select{
+	border: 1px solid #FFF;
+}
+body.dark .formTextarea.write small{visibility: visible;color: #FFF;}
+body.dark .formInput.success input{border: 2px solid #2ecc71;}
+body.dark .formInput.error input{border :2px solid #e74c3c;}

@@ -1,0 +1,128 @@
+@media only screen and (max-width: 1440px){
+	.intro-img,.intro-text{width: 50%;}
+	.about-container div{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.about-img{
+		order: 0;
+		width: 100%;
+	}
+	.about-text{
+		order: 1;
+		width: 100%;
+		margin-top: 2%;
+		margin-bottom: 5%;
+	}
+	.about-text h2{
+		margin-bottom: 1.5%;
+		text-align: center;
+	}
+	.forms{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	.article{
+		width: 45%;
+   		margin: 2.5%;
+	}
+	.site-title{
+        text-align: center;
+	}
+}
+@media only screen and (max-width: 860px){
+	.row a{width: 100%;}
+	.row button{flex-direction: column;align-items: center;}
+}
+@media only screen and (max-width: 768px){
+	body{padding-bottom: 350px;}
+	.intro-content{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20%;
+	}
+	.intro-text{
+		width: 100%;
+		padding: 2%;
+		text-align: justify;
+		order: 2;
+	}
+	.intro-img{
+		width: 100%;
+		order: 1;
+	}
+	.articles{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.article{
+		width: 100%;
+		margin: 5% 0;
+	}
+	#joinModal {
+        width: 70%;
+	    padding: 2%;
+	    margin: 0 15%;
+	    font-size: 1.1rem;
+	}
+	.about-text{font-size: 1rem;}
+	#submitContact {
+	    width: 50%;
+	    margin: auto;
+	}
+	.buttons{flex-direction: column;}
+	#connexion,#forgot,#newPasswordBtn{margin: 1% 0}
+	#connexion,#forgot,#resetPassword,#newPasswordBtn{width: 100%;}
+	#newPostBtn{width: 100%;margin: 0;}
+	.update-buttons{
+		display: flex;
+		flex-direction: column;
+	    justify-content: space-around;
+	    align-items: center;
+	}
+	#updatePostBtn,#closeBtn{
+	    width: 100%;
+		margin: 1% 0;
+	}
+	.side-picture{
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-around;
+	    width: 100%;
+	    margin-bottom: 4%;
+	}
+	.side-picture img{
+	    width: 100%;
+	    margin: 2% 0;
+	}
+}
+
+@media only screen and (max-width: 535px){
+	.footer-content p{font-size: 1rem;}
+	.footer-legal{display: flex;flex-direction: column;}
+	.footer-legal span{display: none;}
+}
+
+@media only screen and (max-width: 425px){
+	.intro-text p,#annexe-contact p, #annexe-joinus p{
+		font-size: 1rem;
+	}
+	.page-title{
+		font-size: 2.5rem;
+	}
+	.heading{margin-top: 10%;}
+	.footer-content p{display: none;}
+	.connect-core h1{
+		font-size: 1.5rem;
+	}
+}

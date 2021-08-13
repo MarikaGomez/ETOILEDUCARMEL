@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*,*::before,*::after{box-sizing: border-box;}
+
+body{
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	font-family: var(--ff-primary);
+	position: relative;
+	padding-bottom: 150px;
+	font-family: "Nunito", sans-serif;
+}
+
+/*<!-- ########################################################################## -->*/
+/*<!-- ###                               HEADER                               ### -->*/
+/*<!-- ########################################################################## -->*/
+
+.site-content{
+	background: url(../img/fond.jpg);
+	background-size: cover;
+    background-position: center;
+    background-color: #111;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-blend-mode: difference;
+}
+.index-heading{padding: 25%;}
+.heading{padding: 15%;}
+.site-title{
+	color: #FFF;
+	padding: auto 15%;
+}
+.site-title{
+	color: #FFF;
+	padding: auto 15%;
+	margin-top : 3%;
+	margin-bottom: 3%;
+	font-size: 3rem;
+	font-weight:800;
+	text-transform: uppercase;
+}
+
+/*<!-- ########################################################################## -->*/
+/*<!-- ###                               NAVBAR                               ### -->*/
+/*<!-- ########################################################################## -->*/
+
+#mainNavbar,#pagesNavbar{
+	font-size: 1rem;
+	font-weight: 100;
+	padding: .1rem 0;
+}
+#mainNavbar .navbar-brand,#pagesNavbar .navbar-brand{
+	font-size: 1rem;
+	text-transform: uppercase;
+	padding: 8px;
+}
+#mainNavbar .nav-link:hover,#pagesNavbar .nav-link:hover,
+#mainNavbar .nav-item.active .nav-link,#pagesNavbar .nav-item.active .nav-link{
+	background:rgba(0,0,0,0.8);
+	color: #FFF;
+}
+#mainNavbar .nav-item .nav-link,#theme,#nav-login,
+#pagesNavbar .nav-item .nav-link,#theme,#nav-login{padding: 5px 10px;}
+.theme-checkbox{opacity: 0;position: absolute;}
+.fa-user-circle{font-size: 1.25rem;color: #111;}
+/*Cette forme de sélecteur '+' permet de sélectionner un élément uniquement si celui-ci suit 
+un élément donné et que les 2 éléments sont les enfants d'un même élément parent.
+l'input 'theme-checkbox' est directement suivi de 'label' */
+.theme-checkbox:checked+.label .ball{transform: translateX(24px);}
+.label{
+	background: #111;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 50px;
+	position: relative;
+	height: 24px;
+	width: 50px;
+	padding: 5px;
+}
+.fa-moon{color: #F1C40F;}
+.fa-sun{color: #F39C12;}
+.ball{
+	background: #FFF;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 2px;
+	left: 2px;
+	border-radius: 50px;
+	transition: transform 0.2s linear;
+}
+
+/*<!-- ########################################################################## -->*/
+/*<!-- ###                                BODY                                ### -->*/
+/*<!-- ########################################################################## -->*/
+
+.intro{width: 90%;margin: 5%;}
+.intro-content{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 5%;
+}
+.intro-content:nth-child(2n) .intro-text{order: 2;}
+.intro-text{
+	width: 40%;
+	align-self: center;
+	text-align: center;
+	padding: 1%;
+	margin: 2%;
+}
+.intro-text button{
+	padding: 2%;
+	border: 1px solid #111;
+	border-radius: 4px;
+	background: #FFF;
+	text-transform: uppercase;
+	margin: 2% 0;
+}
+.intro-text button:hover{
+	background: #111;
+	color: #FFF;
+	cursor: pointer;
+}
+.intro-text h2{
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 1.25rem;
+	margin-bottom: 4%;
+}
+.intro-text h3{
+	font-weight: 400;
+	font-size: 2rem;
+	text-transform: capitalize;
+	margin-bottom: 4%;
+}
+.intro-text p{
+	font-weight: 100;
+	font-size: 1.2rem;
+	line-height: 2;
+}
+.intro-text p span{
+	text-decoration: underline;
+}
+.intro-img{width: 60%;}
+.intro-img img{width: 100%;}
+
+
+/*<!-- ########################################################################## -->*/
+/*<!-- ###                               ANNEXES                              ### -->*/
+/*<!-- ########################################################################## -->*/
+
+.page1-content{
+	background: url(../img/fond.jpg);
+	background-size: cover;
+	width: 100%;
+}
+.page2-content{
+	background: url(../img/fond.jpg);
+	background-size: cover;
+	width: 100%;
+}
+.page-title, .page-desc{
+	color: #FFF;
+	padding: auto 15%;
+}
+.page-title{
+	padding: auto 15%;
+	margin-bottom: 2%;
+	font-size: 3.5rem;
+	font-weight:800;
+	text-transform: uppercase;
+}
+.page-desc{
+	font-size: 1.2rem;
+	font-weight:100;
+	margin-bottom: 10%;
+}
+.annexe-content{
+	background: url(../img/annexe.jpg);
+    background-color: #111;
+    background-size: cover;
+    width: 100%;
+    background-blend-mode: difference;
+    background-position: center;
+}
+.page_coming_soon-img{
+	width: 90%;
+	margin: 2% 5%;
+}
+.page_coming_soon-img img{width: 100%;}
+
+/*<!-- ########################################################################## -->*/
+/*<!-- ###                            CORE ARTICLES                           ### -->*/
+/*<!-- ########################################################################## -->*/
+
+.row{justify-content: center;}
+.row a{
+	justify-content: space-around;
+    width: 20%;
+    margin: 2% auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #FFF;
+    border-radius: 4px;
+}
+.row button{
+	font-weight:800;
+    font-size: 1.1rem;
+	width: 100%;
+    padding: 2%;
+    background: #FFF;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.row a:hover{transform: scale(1.1);}
+.row button:hover{
+	background: #FFF;
+	color: #111;
+}
+.core{width: 90%;margin: 2% 5%;}
+.articles{	
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.articles.showMe{flex-direction: column;align-items: center;}
+.article{width: 30%;margin: 1.6%;}
+.article-img{overflow: hidden;}
+.article-img img{
+	width: 100%;
+	height: 25em;
+	object-fit: cover;
+}
+.show_article-img img{width: 100%;}
+.side-picture{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 4%;
+}
+.article-content{
+	text-align: justify;
+    font-weight: 400;
+    line-height: 2;
+    margin: 0 0 4% 0;
+}
+.side-picture img{width: 45%;}
+.article-body{text-align: center;margin-top: 4%;}
+.article-body>*{margin: 0;padding: 0;}
+.article-body p{text-align: justify;}
+.article-cat{font-size: 1.3rem;text-transform: uppercase;}
+.article-title{font-weight: 400;text-transform: capitalize;margin: 4%;}
+.article-title a{color: #808080;}
+.article-title a:hover{color: #808080;}
+.article-cat{font-weight:100;}
+
+/*<!-- ########################################################################## -->*/
+/*<!-- ###                              JOIN US!                              ### -->*/
+/*<!-- ########################################################################## -->*/
+
+#annexe-joinus{
+	margin: 5% 10% 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+#annexe-joinus p{
+	width: 80%;
+	font-weight:100;
+	text-align: justify;
+}
+.adh_form{color: #111;}
+.adh_form h1{
+	text-transform: uppercase;
+	font-size: 2rem;
+    text-align: center;
+}
+div.request{display: flex;align-items: baseline;text-align: center;margin-top: 2%;}
+#joinModal{    
+	width: 35%;
+    padding: 1%;
+    margin: 0 32.5% 4% 32.5%;
+    font-size: 1.25rem;
+}
+.modal-title{color: #111;}
+.asterix{color: red;font-weight: 800;}
+
+
+/*<!-- ########################################################################## -->*/
+/*<!-- ###                              	ABOUT                             ### -->*/
+/*<!-- ########################################################################## -->*/
+
+.about{width: 90%;margin: 5%;}
+.about-container>div{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 2%;
+}
+.about-img{width: 40%;} 
+.about-text{width: 60%;}
+.about-img img, .about-text p{width: 100%; text-align: center;}
+.about-text{
+	font-size: 1.2rem;
+    line-height: 1.2;
+	margin: 0 2%;
+	text-align: justify;
+	font-weight:100;
+}
+.about-text h2{
+	text-transform: uppercase;
+	margin-bottom: 2%;
+	font-weight: 400;
+	text-align: center;
+}
+.about-text ul{
+	padding: 0 10%; 
+	margin: 0;
+}
+.about-text ul li{
+	list-style: circle;
+	font-weight:100;
+}
+
+/*<!-- ########################################################################## -->*/
+/*<!-- ###                                FORM                                ### -->*/
+/*<!-- ########################################################################## -->*/
+
+.contact{width: 80%;margin: 5% 10%;}
+.update_form{width: 80%;margin: 5% 10%;}
+.forms{
+	padding: 0;
+	margin: 0 auto;
+	width: 50%;
+	margin-bottom: 5%;
+}
+.formInput, .formTextarea{
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+.formInput input, .formTextarea textarea, .formInput select{
+	border: 1px solid #111;
+	border-radius: 4px;
+	display: block;
+	width: 100%;
+	font-family: inherit;
+	font-size: 1rem;
+	padding: 10px;
+}
+.formInput.success input{border: 2px solid #2ecc71;}
+.formInput.error input,.formTextarea.error textarea{border :2px solid #e74c3c;}
+.formInput i{
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	visibility: hidden;
+}
+.formInput.success i.fa-check-circle{color: #2ecc71;visibility: visible;}
+.formInput.error i.fa-exclamation-circle{color: #e74c3c;visibility: visible;}
+.formInput small, .formTextarea small{
+	visibility: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.formInput.error small,.formTextarea.error small{color: #e74c3c;visibility: visible;}
+.formTextarea.write small{visibility: visible;color: var(--clr-dark);}
+#submitContact{
+	display: block;
+	padding: 10px;
+	width: 30%;
+	color: #111;;
+	background: #FFF;
+	border: 1px solid #111;
+	border-radius: 4px;
+	font-family: inherit;
+	text-transform: uppercase;
+	margin-left: 35%;
+}
+#submitContact:hover{
+	background: #111;
+	color: #FFF;
+	cursor: pointer;
+}
+
+
+/*<!-- ########################################################################## -->*/
+/*<!-- ###                             LOG IN PAGE                            ### -->*/
+/*<!-- ########################################################################## -->*/
+
+.connect-core{
+	width: 100%;
+	margin: 10% 0;
+	padding-bottom: 95px;
+}
+.connect-core h1{text-transform: uppercase;	margin-left: 5%;}
+.logform-container{width: 80%;margin: 2% 10%;}
+.identifiant, .password,.resetInfo{
+	width: 75%;
+	margin: 0 10%;
+	display: flex;
+	flex-direction: column;
+}
+.identifiant label, .password label,.resetInfo label{font-weight: 500;}
+.identifiant input, .identifiant select, .password input,.resetInfo input{padding: 10px;}
+.password,.resetInfo{margin-bottom: 2%;}
+.buttons{
+	width: 75%;
+	margin: 0 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+.buttons button,.resetBtn button{
+	padding: 10px;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 2px 2px 0 rgb(0 0 0 / 15%);
+}
+.buttons button:hover,.resetBtn button:hover{cursor: pointer;}
+#connexion,#resetPassword,#newPasswordBtn{font-weight: 500;}
+#forgot{margin: 0 2%}
+form{margin: 5% 0;}
+.hidden{display: none;}
+.paratext{
+	width: 80%;
+	margin: 0 10%;
+	text-align: center;
+}
+.paratext a{color: #808080;text-decoration: underline;}
+.paratext a:hover{color: #808080;text-decoration: none;}
+.login:hover{text-decoration: none;font-weight: bold;}
+
+
+/*<!-- ########################################################################## -->*/
+/*<!-- ###                               FOOTER                               ### -->*/
+/*<!-- ########################################################################## -->*/
+
+footer{
+	background: #111;
+	height: auto;
+	width: 100%; 
+	color: #FFF;
+	position: absolute;
+	bottom: 0;
+}
+.footer-legal{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: .8rem;
+	margin: 0 0 1% 0;
+}
+.footer-legal a{
+	font-weight:100;
+	color: #FFF;
+	margin: 0 10px;
+}
+.footer-legal a:hover{text-decoration: none;color: #C0C0C0;}
+.footer-bottom{
+	width: 100%;
+	text-align: center;
+}
+.footer-bottom p{
+	font-weight:100;
+	font-size: 1rem;
+	text-transform: capitalize;
+	margin: 1% 0 0 0;
+}
